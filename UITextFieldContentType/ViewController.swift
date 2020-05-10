@@ -47,6 +47,8 @@ class ViewController: UIViewController {
             passwordTextField.placeholder = "Password"
             passwordTextField.textContentType = .newPassword
             passwordTextField.isSecureTextEntry = true
+
+/*            
             firstNameTextField.translatesAutoresizingMaskIntoConstraints = false
             lastNameTextField.translatesAutoresizingMaskIntoConstraints = false
             phoneTextField.translatesAutoresizingMaskIntoConstraints = false
@@ -54,6 +56,7 @@ class ViewController: UIViewController {
             emailTextField.translatesAutoresizingMaskIntoConstraints = false
             passwordTextField.translatesAutoresizingMaskIntoConstraints = false
             self.view.addSubview(firstNameTextField)
+*/            
             
             /*
             firstNameTextField.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 30).isActive = true
