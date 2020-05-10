@@ -16,10 +16,9 @@ class ViewController: UIViewController {
 
         // Simulating a network fetch
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            // let firstNameTextField = UITextField(frame: .zero)
-            let firstNameTextField = UITextField(frame: CGRect(x: 30, y: 30, width: 200.00, height: 40.00))
-            // firstNameTextField.borderStyle = .roundedRect
-            // firstNameTextField.placeholder = "First Name"
+            let firstNameTextField = UITextField(frame: .zero)
+            firstNameTextField.borderStyle = .roundedRect
+            firstNameTextField.placeholder = "First Name"
             firstNameTextField.textContentType = .givenName
             firstNameTextField.keyboardType = .namePhonePad // the autofill doesn't work without setting this property to the .namePhonePad option
             let lastNameTextField = UITextField(frame: .zero)
@@ -47,8 +46,7 @@ class ViewController: UIViewController {
             passwordTextField.placeholder = "Password"
             passwordTextField.textContentType = .newPassword
             passwordTextField.isSecureTextEntry = true
-
-/*            
+            
             firstNameTextField.translatesAutoresizingMaskIntoConstraints = false
             lastNameTextField.translatesAutoresizingMaskIntoConstraints = false
             phoneTextField.translatesAutoresizingMaskIntoConstraints = false
@@ -56,9 +54,7 @@ class ViewController: UIViewController {
             emailTextField.translatesAutoresizingMaskIntoConstraints = false
             passwordTextField.translatesAutoresizingMaskIntoConstraints = false
             self.view.addSubview(firstNameTextField)
-*/            
-            
-            /*
+
             firstNameTextField.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 30).isActive = true
             firstNameTextField.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 30).isActive = true
             firstNameTextField.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -30).isActive = true
@@ -82,7 +78,8 @@ class ViewController: UIViewController {
             passwordTextField.topAnchor.constraint(equalTo: emailTextField.bottomAnchor, constant: 10).isActive = true
             passwordTextField.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 30).isActive = true
             passwordTextField.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -30).isActive = true
-            */
+            
+            firstNameTextField.becomeFirstResponder()
         }
     }
 
