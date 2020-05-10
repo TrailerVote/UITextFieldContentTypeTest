@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         // Simulating a network fetch
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
             //let firstNameTextField = UITextField(frame: .zero)
-            let firstNameTextField = UITextField
+            let firstNameTextField = UITextField(frame: CGRect(x: 0, y: 0, width: 200.00, height: 40.00)
             //firstNameTextField.borderStyle = .roundedRect
             //firstNameTextField.placeholder = "First Name"
             firstNameTextField.textContentType = .givenName
