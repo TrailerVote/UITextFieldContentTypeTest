@@ -54,6 +54,8 @@ class ViewController: UIViewController {
             emailTextField.translatesAutoresizingMaskIntoConstraints = false
             passwordTextField.translatesAutoresizingMaskIntoConstraints = false
             self.view.addSubview(firstNameTextField)
+            
+            /*
             firstNameTextField.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 30).isActive = true
             firstNameTextField.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 30).isActive = true
             firstNameTextField.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -30).isActive = true
@@ -77,6 +79,7 @@ class ViewController: UIViewController {
             passwordTextField.topAnchor.constraint(equalTo: emailTextField.bottomAnchor, constant: 10).isActive = true
             passwordTextField.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 30).isActive = true
             passwordTextField.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -30).isActive = true
+            */
         }
     }
 
