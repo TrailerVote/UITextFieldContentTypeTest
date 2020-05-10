@@ -16,10 +16,10 @@ class ViewController: UIViewController {
 
         // Simulating a network fetch
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            //let firstNameTextField = UITextField(frame: .zero)
-            let firstNameTextField = UITextField(frame: CGRect(x: 0, y: 0, width: 200.00, height: 40.00))
-            //firstNameTextField.borderStyle = .roundedRect
-            //firstNameTextField.placeholder = "First Name"
+            // let firstNameTextField = UITextField(frame: .zero)
+            let firstNameTextField = UITextField(frame: CGRect(x: 30, y: 30, width: 200.00, height: 40.00))
+            // firstNameTextField.borderStyle = .roundedRect
+            // firstNameTextField.placeholder = "First Name"
             firstNameTextField.textContentType = .givenName
             firstNameTextField.keyboardType = .namePhonePad // the autofill doesn't work without setting this property to the .namePhonePad option
             let lastNameTextField = UITextField(frame: .zero)
